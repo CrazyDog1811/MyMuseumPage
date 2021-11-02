@@ -1,36 +1,208 @@
 @font-face {
     font-family: Roboto;
-     src: url("assets/fonts/Roboto-Regular.ttf");
-   }
-   header, footer, main, section {
-       border: 1px solid red;
-       margin: 0;
-   }
-   .section .section-dark, .header {
-background-color: #030303;
-   }
-   .header-container {
-       display: flex;
-       justify-content: space-between;
-       align-items: center;
-      max-width: 1440px;
-       height: 150px;
-       margin: 0 auto;
-   }
-   .header-container .logo {
-       width: 199px;
-       height: 33px;
-   }
-   .header-container .logo span:first-child {
-       background-image: url("assets/svg/Vector.svg");
-       background-repeat: no-repeat;
-   }
+    src: url("assets/fonts/Roboto-Regular.ttf");
+}
 
-   .header-container span {
-       padding: 0 25px;
-       color: #fff;
-       font-family: Forum, serif;
-       font-weight: normal;
-       font-size: 28px;
-       text-transform: uppercase;
-   }
+header,
+footer,
+main,
+section {
+    border: 1px solid red;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.section .section-dark,
+.header {
+    background-color: #030303;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1440px;
+    height: 150px;
+    margin: 0 auto;
+}
+
+.header-container .logo {
+    width: 199px;
+    height: 33px;
+}
+
+.header-container .logo span:first-child {
+    background-image: url("assets/svg/Vector.svg");
+    background-repeat: no-repeat;
+}
+
+.header-container span {
+    padding: 0 25px;
+    color: #fff;
+    font-family: Forum, serif;
+    font-weight: normal;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 775px;
+}
+
+.navigation li {
+    list-style: none;
+}
+
+.navigation li a {
+    color: #fff;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-family: Roboto, sans-serif;
+    font-size: 22px;
+}
+
+.navigation li a:hover {
+    color: #d1bea4;
+}
+
+.navigation li a:active {
+    color: #7E6C51;
+}
+
+.section-dark {
+    background-color: #030303;
+}
+
+.section-title {
+    font-family: Forum;
+    font-size: 80px;
+    line-height: 90px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.section-dark .section-title {
+    color: #fff;
+}
+
+.container .welcome-basic {
+    position: relative;
+    background-image: url("assets/img/1.jpg");
+    background-position: right top;
+    background-repeat: no-repeat;
+    height: 810px;
+}
+
+.welcome-aside {
+    position: absolute;
+    width: 598px;
+    height: 388px;
+    left: 0px;
+    top: 150px;
+}
+
+.welcome-aside p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 33px;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+    display: inline-block;
+}
+
+.welcome-aside a {
+    display: block;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 64px;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+    text-decoration: none;
+    width: 360px;
+    height: 75px;
+    background-color: #710707;
+    text-align: center;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+.welcome-basic .pagination {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 600px;
+    height: 120px;
+    background-color: #030303;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.welcome-basic .pagination div:first-child {
+    width: 76px;
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.welcome-basic .pagination div:first-child span {
+    color: #fff;   
+}
+
+.carusel {
+    width: 180px;
+    height: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.carusel span {
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+}
+
+.carusel span:first-child {
+    background-color: #7E6C51;
+}
+
+.pagination .arrows {
+    width: 80px;
+    height: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.pagination .arrows .left {
+    display: inline-block;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 8px;
+    background-image: url("assets/svg/←.svg");
+}
+
+.pagination .arrows .right {
+    display: inline-block;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 8px;
+    background-image: url("assets/svg/right.svg");
+}
