@@ -1,0 +1,36 @@
+@font-face {
+    font-family: Roboto;
+     src: url("assets/fonts/Roboto-Regular.ttf");
+   }
+   header, footer, main, section {
+       border: 1px solid red;
+       margin: 0;
+   }
+   .section .section-dark, .header {
+background-color: #030303;
+   }
+   .header-container {
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+      max-width: 1440px;
+       height: 150px;
+       margin: 0 auto;
+   }
+   .header-container .logo {
+       width: 199px;
+       height: 33px;
+   }
+   .header-container .logo span:first-child {
+       background-image: url("assets/svg/Vector.svg");
+       background-repeat: no-repeat;
+   }
+
+   .header-container span {
+       padding: 0 25px;
+       color: #fff;
+       font-family: Forum, serif;
+       font-weight: normal;
+       font-size: 28px;
+       text-transform: uppercase;
+   }
