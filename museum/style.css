@@ -25,6 +25,11 @@ html {
     margin: 0 auto;
 }
 
+.container2 {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
 .header-container {
     display: flex;
     justify-content: space-between;
@@ -287,4 +292,54 @@ font-size: 18px;
 line-height: 21px;
 color: #000000;
 margin: 10px 0;
+}
+
+.picture-explore {
+    margin: 75px auto;
+    width: 1440px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.picture-explore figure {
+    margin: 0;
+}
+
+.picture-explore figure img {
+    margin: 0;
+}
+
+.text-explore {
+    width: 660px;
+    height: 281px;
+}
+
+.text-explore p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 40px;
+    color: #FFFFFF;
+    margin-top: 25px;
+}
+
+.text-explore p > span {
+    color:#caaa7d;
+    ;
+}
+
+.text-explore p:first-child {
+    position: relative;
+}
+
+.text-explore p:first-child::before {
+    position: absolute;
+    content: "";
+    height: 3px;
+    left: 0;
+    right: 0;
+    background-color: #710707;
+    top: -100px
 }
