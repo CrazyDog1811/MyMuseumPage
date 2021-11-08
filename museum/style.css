@@ -365,9 +365,9 @@ html {
 
 .video-top {
     display: flex;
-justify-content: space-between;
-align-items: center;
-margin: 75px 0;
+    justify-content: space-between;
+    align-items: center;
+    margin: 75px 0;
 }
 
 .video-top h2 {
@@ -420,29 +420,29 @@ margin: 75px 0;
     outline: none;
     transition: background 450ms ease-in;
     -webkit-appearance: none;
-  }
-  
-  .progress::-webkit-slider-thumb {
+}
+
+.progress::-webkit-slider-thumb {
     width: 20px;
     height: 20px;
     border-radius: 50%;
     -webkit-appearance: none;
     cursor: ew-resize;
     background: #fff;
-  }
+}
 
-  .videoplayer .play {
-      display: inline-block;
-      width: 23px;
-      height: 31px;
-      background-image: url('assets/svg/play.svg');
-  }
+.videoplayer .play {
+    display: inline-block;
+    width: 23px;
+    height: 31px;
+    background-image: url('assets/svg/play.svg');
+}
 
-  .play:hover {
-      cursor: pointer;
-  }
+.play:hover {
+    cursor: pointer;
+}
 
-  .videoplayer .volume {
+.videoplayer .volume {
     display: inline-block;
     width: 38px;
     height: 31px;
@@ -456,5 +456,56 @@ margin: 75px 0;
     background-image: url('assets/svg/Square.svg');
 }
 
+.video-slider {
+    display: flex;
+    justify-content: space-between;
+    padding: 52px 0;
+    position: relative;
+}
 
-  
+.video-slider figure {
+    height: fit-content;
+}
+
+.video-slider .item {
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 100px);
+    width: 200px;
+    height: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.video-slider .item .items {
+    border: 5px solid #999999;
+    border-radius: 50%;
+    width: 2px;
+}
+
+.video-slider .item .items:nth-child(2) {
+    border: 5px solid #030303; 
+}
+
+.video-slider .item span:first-child,
+.video-slider .item span:last-child {
+    line-height: 10px;
+    font-size: 22px;
+    color: #999999;
+}
+
+.art-gallery {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-top: 75px;
+}
+
+.gallery-picture {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    row-gap: 24px;
+    height: 2000px;
+    margin-top: 75px;
+    flex-wrap: wrap;
+}
