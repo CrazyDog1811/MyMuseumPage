@@ -150,6 +150,10 @@ html {
     border-radius: 10px;
 }
 
+.welcome-aside a:hover {
+    background-color: #9D8665;
+}
+
 .welcome-basic .pagination {
     position: absolute;
     right: 0;
@@ -172,6 +176,10 @@ html {
 
 .welcome-basic .pagination div:first-child span {
     color: #fff;
+}
+
+.carusel span:hover {
+    background-color: #9D8665;
 }
 
 .carusel {
