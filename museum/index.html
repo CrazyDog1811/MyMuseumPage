@@ -114,8 +114,9 @@
             <section class="section" id="video">
                 <div class="video-block">
                     <div class="video-top">
-                    <h2 class="section-title">video journey</h2>
-                    <p>Enter and visit one of the most famous museums in the world and enjoy masterpieces such as Mona Lisa or Hammurabi's Code</p>
+                        <h2 class="section-title">video journey</h2>
+                        <p>Enter and visit one of the most famous museums in the world and enjoy masterpieces such as
+                            Mona Lisa or Hammurabi's Code</p>
                     </div>
                     <figure>
                         <video src="assets/video/" poster="assets/img/main video.jpg"></video>
@@ -140,7 +141,8 @@
                         </figure>
                         <div class="item">
                             <span>&laquo;</span>
-                            <span class="items"></span><span class="items"></span><span class="items"></span><span class="items"></span><span class="items"></span>
+                            <span class="items"></span><span class="items"></span><span class="items"></span><span
+                                class="items"></span><span class="items"></span>
                             <span>&raquo;</span>
                         </div>
                     </div>
@@ -165,7 +167,49 @@
                     </div>
                 </div>
             </section>
-            <section class="section " id="tickets"></section>
+            <section class="section " id="tickets">
+                <div class="tickets">
+                    <h2 class="section-title">BUY TICKETS</h2>
+                    <div class="ticket-block">
+                        <figure>
+                            <img src="assets/img/buy ticket.jpg" alt="picture" width="720px" height="550px">
+                        </figure>
+                        <div class="ticket-shop">
+                            <div class="select-type">
+                                <h4>ticket type</h4>
+                                <label>
+                                    <input type="radio" name="radio" checked>Permanent exhibition
+                                </label>
+                                <label>
+                                    <input type="radio" name="radio">Temporary exhibition
+                                </label>
+                                <label>
+                                    <input type="radio" name="radio">Combined Admission
+                                </label>
+                            </div>
+                            <div class="amount">
+                                <div>
+                                    <h4>amount</h4>
+                                    <p>Basic 18+</p>
+                                    <div class="count">
+                                        <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                                        <input type="number" min="0" max="20" value="1" readonly class="number">
+                                        <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                                    </div>
+                                    <p>Senior 65+</p>
+                                    <div class="count">
+                                        <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                                        <input type="number" min="0" max="20" value="1" readonly class="number">
+                                        <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                                    </div>
+                                    <h3>Total €220</h3>
+                                </div>
+                                <button>buy now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <section class="section" id="contacts"></section>
         </div>
     </main>
